@@ -9,7 +9,7 @@ void main() {
     do {
         IO.println("informe qual grandeza deseja calcular");
         String escreva = IO.readln();
-
+            //tensao
         if (escreva.equals(grandeza[1])) {
             IO.print("informe a resistencia");
             r = Double.parseDouble(IO.readln());
@@ -18,6 +18,7 @@ void main() {
             u = r * i;
             informe = String.valueOf(u);
             break;
+               //resistencia
         } else if (escreva.equals(grandeza[2])) {
             IO.print("informe a tensao e a corrente ");
             u = Double.parseDouble(IO.readln());
@@ -26,6 +27,7 @@ void main() {
             r = u / i;
             informe = String.valueOf(r);
             break;
+               //corrente
         } else if (escreva.equals(grandeza[3])) {
             IO.print("informe a tensao ");
             u = Double.parseDouble(IO.readln());
@@ -33,7 +35,8 @@ void main() {
             r = Double.parseDouble(IO.readln());
             i = u / r;
             informe = String.valueOf(i);
-            break;
+          break;
+        //sair do programa
         } else if (escreva.equals(grandeza[4])) {
             return;
 
